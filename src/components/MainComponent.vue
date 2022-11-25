@@ -42,7 +42,7 @@ export default {
             try {
                 this.loading = true;
 
-                await fetch(`http://www.floatrates.com/daily/${this.base.toLowerCase()}.json`)
+                await fetch(`https://www.floatrates.com/daily/${this.base.toLowerCase()}.json`)
                     .then(response => response.json())
                     .then(result => {
                         this.currencies = Object.entries(result).sort();

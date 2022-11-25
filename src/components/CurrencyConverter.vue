@@ -72,7 +72,7 @@ export default {
         },
         fetchCurrenciesFrom() {
             try {
-                fetch(`http://www.floatrates.com/daily/${this.from.toLowerCase()}.json`)
+                fetch(`https://www.floatrates.com/daily/${this.from.toLowerCase()}.json`)
                     .then(response => response.json())
                     .then(result => {
                         this.currenciesFrom = Object.entries(result).sort();
@@ -84,7 +84,7 @@ export default {
         },
         fetchCurrenciesTo() {
             try {
-                fetch(`http://www.floatrates.com/daily/${this.to.toLowerCase()}.json`)
+                fetch(`https://www.floatrates.com/daily/${this.to.toLowerCase()}.json`)
                     .then(response => response.json())
                     .then(result => {
                         this.currenciesTo = Object.entries(result).sort();
