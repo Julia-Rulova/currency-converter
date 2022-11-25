@@ -1,5 +1,7 @@
 # currency-converter
 
+* Сайт доступен по [ссылке](https://currency-converter-smoky.vercel.app/)
+
 ## Project setup
 ```
 npm install
